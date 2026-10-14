@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#071d31">
+<meta name="description" content="دليل تفاعلي لمونوريل شرق النيل: خريطة محطات تخطيطية، معلومات مفصلة، أسئلة شائعة، صور وأسعار تذاكر.">
+<title>مونوريل مصر | دليل المسار والمحطات</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#home" aria-label="مونوريل مصر - الرئيسية">
+    <img class="brand-logo" src="logo-cairo-monorail.png" alt="شعار Cairo Monorail" width="68" height="68">
+    <span>مونوريل مصر<small>حركة نحو المستقبل</small></span>
+  </a>
+  <nav aria-label="التنقل الرئيسي"><a href="#home">الرئيسية</a><a href="#route-map">المسار والمحطات</a><a href="#faqs">أسئلة شائعة</a><a href="#photos">صور حقيقية</a><a href="#tickets">التذاكر والدفع</a></nav>
+  <span class="header-pill" title="المعلومات محفوظة داخل الصفحة ولا تحتاج إلى API">دليل تفاعلي </span>
+</header>
+<main id="home">
+  <section class="hero" aria-labelledby="main-title">
+    <div class="hero-copy">
+      <div class="eyebrow detailable" data-detail-id="tagline">المونوريل · مصر</div>
+      <h1 id="main-title" class="detailable" data-detail-id="mainTitle">القاهرة تتحرك<br><span>طرق بلا زحام</span></h1>
+      <p class="hero-description detailable" data-detail-id="intro">استكشف مسار مونوريل شرق النيل و تطور النقل الحديث ودور المونوريل في ربط المدن وتسهيل حركة التنقل. .</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#experience">شاهد المونوريل يتحرك ↓</a>
+        <button class="btn btn-secondary" id="toggleTop" type="button" aria-pressed="false">Ⅱ إيقاف الحركة مؤقتًا</button>
+      </div>
+    </div>
+
+    <div class="scene-wrap" id="experience">
+      <svg class="scene" id="scene" viewBox="0 0 1440 470" role="img" aria-label="رسم توضيحي لمونوريل يتحرك فوق أعمدة مرتفعة وخلفية عمرانية مصرية" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#10314a"/><stop offset=".68" stop-color="#416579"/><stop offset="1" stop-color="#d39b68"/></linearGradient>
+          <linearGradient id="sunGlow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffd88a"/><stop offset="1" stop-color="#f09d60"/></linearGradient>
+          <linearGradient id="trainBody" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f8fbfd"/><stop offset="1" stop-color="#cadce5"/></linearGradient>
+          <linearGradient id="window" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#173e56"/><stop offset="1" stop-color="#071c2e"/></linearGradient>
+          <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#eef5f6"/><stop offset="1" stop-color="#8299a6"/></linearGradient>
+          <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="14"/></filter>
+        </defs>
+        <rect width="1440" height="470" fill="url(#sky)"/>
+        <circle cx="260" cy="96" r="53" fill="#ffc66d" opacity=".2" filter="url(#softGlow)"/><circle id="sunDisk" cx="260" cy="96" r="31" fill="url(#sunGlow)" opacity=".9"/>
+        <!-- distant haze -->
+        <path d="M0 250 Q180 210 360 247 T720 235 T1080 247 T1440 220 V470 H0Z" fill="#6b8790" opacity=".28"/>
+        <!-- distant city skyline -->
+        <g fill="#18394c" opacity=".8">
+          <path d="M0 300V245h42v-27h27v82h40v-45h34v45h26v-70h38v70h30v-34h46v34h25v-58h35v58h27v-87h40v87h34v-39h35v39h28v-66h39v66h28v-51h35v51h24v-90h43v90h24v-31h33v31h27v-62h36v62h28v-38h35v38h26v-73h42v73h28v-47h40v47h28v-85h41v85h28v-36h40v36h28v-58h37v58h27v-42h42v42h28v-76h38v76h20v170H0Z"/>
+        </g>
+        <!-- modern towers -->
+        <g fill="#244b60" opacity=".95">
+          <path d="M680 305V145l18-23 18 23v160Z"/><path d="M725 305V173h30v132Z"/><path d="M763 305V112h42v193Z"/><path d="M770 112l14-24 14 24Z"/><path d="M814 305V160h22v145Z"/><path d="M845 305V134h39v171Z"/><path d="M852 134l12-20 12 20Z"/><path d="M893 305V194h29v111Z"/><path d="M931 305V151h46v154Z"/><path d="M940 151l14-19 14 19Z"/><path d="M985 305V183h25v122Z"/>
+        </g>
+        <g stroke="#78a4b6" stroke-width="2" opacity=".3"><path d="M690 164h17M690 183h17M690 202h17M690 221h17M690 240h17M773 137h22M773 157h22M773 177h22M773 197h22M773 217h22M773 237h22M851 156h25M851 177h25M851 198h25M851 219h25M851 240h25M940 173h28M940 195h28M940 217h28M940 239h28"/></g>
+        <!-- near-side low buildings -->
+        <path d="M0 324h110v-48h68v48h44v-29h56v29h55v-72h67v72h48v-45h64v45h48v-60h72v60h55v-35h57v35h63v-67h68v67h44v-31h74v31h56v-51h76v51h64v-36h69v36h70v146H0Z" fill="#102d41"/>
+        <g opacity=".48" fill="#8cb2c0"><path d="M127 290h8v10h-8zm18 0h8v10h-8zm18 0h8v10h-8zM358 273h8v10h-8zm18 0h8v10h-8zm18 0h8v10h-8zM497 292h8v9h-8zm18 0h8v9h-8zm18 0h8v9h-8zM1064 279h8v10h-8zm18 0h8v10h-8zm18 0h8v10h-8zM1240 290h8v10h-8zm18 0h8v10h-8zm18 0h8v10h-8z"/></g>
+        <!-- pillars and guideway -->
+        <g>
+          <path d="M100 312h28l18 158h-20Z" fill="#627e8b"/><path d="M360 312h28l14 158h-20Z" fill="#627e8b"/><path d="M645 312h28l8 158h-20Z" fill="#627e8b"/><path d="M930 312h28l-2 158h-20Z" fill="#627e8b"/><path d="M1210 312h28l-10 158h-20Z" fill="#627e8b"/>
+          <path d="M0 305H1440v29H0Z" fill="url(#beam)"/><path d="M0 305H1440v6H0Z" fill="#fff" opacity=".9"/><path d="M0 330H1440v5H0Z" fill="#617d8c"/>
+          <path d="M0 339H1440" stroke="#0b2638" stroke-width="4" opacity=".45"/>
+        </g>
+        <!-- Night mode overlay and stars; controlled by script.js -->
+        <rect id="nightOverlay" x="0" y="0" width="1440" height="470" fill="#030b21" opacity="0" pointer-events="none"/>
+        <g id="nightStars" aria-hidden="true" opacity="0" pointer-events="none" fill="#e7f5ff">
+          <circle cx="86" cy="42" r="1.8"/><circle cx="148" cy="132" r="1.2"/><circle cx="355" cy="53" r="1.5"/>
+          <circle cx="430" cy="116" r="1.1"/><circle cx="520" cy="43" r="1.6"/><circle cx="625" cy="98" r="1.2"/>
+          <circle cx="720" cy="45" r="1.8"/><circle cx="875" cy="64" r="1.2"/><circle cx="1036" cy="42" r="1.7"/>
+          <circle cx="1130" cy="108" r="1.1"/><circle cx="1288" cy="51" r="1.6"/><circle cx="1370" cy="126" r="1.3"/>
+          <circle cx="980" cy="87" r="1.2"/><circle cx="570" cy="148" r="1.1"/><circle cx="1200" cy="29" r="1.2"/>
+        </g>
+        <!-- moving monorail train -->
+        <g class="train" id="train" transform="translate(500 0)">
+          <ellipse cx="250" cy="300" rx="220" ry="13" fill="#031421" opacity=".36"/>
+          <!-- roof rail and connectors -->
+          <path d="M55 235h360" stroke="#0b2538" stroke-width="7" stroke-linecap="round"/>
+          <path d="M93 235v20m75-20v20m75-20v20m75-20v20m75-20v20" stroke="#233e50" stroke-width="8"/>
+          <!-- body -->
+          <path d="M20 270Q27 237 69 230L106 217H380Q421 221 449 251L463 270Q468 279 451 283H36Q17 282 20 270Z" fill="url(#trainBody)" stroke="#e9f2f6" stroke-width="2"/>
+          <path d="M29 267Q39 247 69 241L91 235H385Q412 239 435 260L442 269Z" fill="url(#window)"/>
+          <!-- windows -->
+          <g fill="#a5d8e7" opacity=".88">
+            <path d="M85 240h51v25H62q7-14 23-25Z"/><path d="M146 240h48v25h-48Z"/><path d="M204 240h48v25h-48Z"/><path d="M262 240h48v25h-48Z"/><path d="M320 240h48v25h-48Z"/><path d="M377 241q20 3 35 22h-35Z"/>
+          </g>
+          <path d="M35 271h411" stroke="#18a9be" stroke-width="7"/>
+          <path d="M41 280h401" stroke="#7d96a4" stroke-width="2"/>
+          <!-- end caps -->
+          <path d="M20 269Q23 247 49 244l-3 26Z" fill="#e8f1f4"/><path d="M421 243q24 7 42 27q5 10-11 12h-20Z" fill="#f5fafc"/>
+          <circle cx="442" cy="270" r="3.6" fill="#ff625b"/><circle cx="35" cy="270" r="3.3" fill="#f4b84e"/>
+          <!-- Egypt monorail label -->
+          <g transform="translate(485 0) scale(-1 1)"><rect x="169" y="273" width="120" height="16" rx="8" fill="#0d4c68"/><text x="229" y="284.5" font-family="Tahoma, Arial" font-size="10" font-weight="bold" text-anchor="middle" fill="#ffffff">MONORAIL EGYPT</text></g>
+          <!-- upper details -->
+          <path d="M104 218l15-8h235l15 8" fill="none" stroke="#ffffff" stroke-width="2" opacity=".85"/>
+        </g>
+        <!-- foreground roadway -->
+        <path d="M0 427Q360 410 720 427T1440 421V470H0Z" fill="#071925"/>
+        <path d="M0 439Q360 423 720 439T1440 433" stroke="#5f7781" stroke-width="2" fill="none" opacity=".45"/>
+        <g fill="#d3e0e5" opacity=".38"><path d="M125 449h70l7 7h-90zm260-5h92l7 7h-99zm355 6h90l7 7h-95zm350-3h72l7 7h-82z"/></g>
+        <g id="streetCar" transform="translate(1020 396)"><path d="M0 22l10-13h56l14 13v16H0Z" fill="#b7d3dc"/><path d="M17 12h17v10H9Zm21 0h21l10 10H38Z" fill="#163b50"/><circle cx="17" cy="38" r="7" fill="#081925"/><circle cx="64" cy="38" r="7" fill="#081925"/></g>
+      </svg>
+    </div>
+    <section class="controls" aria-label="التحكم في حركة المونوريل">
+      <div class="control-row">
+        <div class="control-cluster">
+          <button class="btn btn-secondary" id="toggle" type="button" aria-pressed="false">Ⅱ إيقاف الحركة</button>
+          <button class="btn btn-secondary" id="reverse" type="button" aria-pressed="false">↔ عكس الاتجاه</button>
+          <button class="btn btn-secondary" id="themeButton" type="button" aria-pressed="false">☾ الوضع الليلي</button>
+        </div>
+        <div class="speed-settings">
+          <label class="control-label" for="speed">سرعة الحركة <strong id="speedValue">1.0×</strong></label>
+          <input id="speed" type="range" min="1" max="10" value="4" step="1" aria-label="مستوى سرعة حركة المونوريل">
+          <div class="range-labels"><span>بطيئة</span><span>سريعة</span></div>
+        </div>
+        <div class="control-cluster camera-controls" aria-label="التحكم بالكاميرا">
+          <span class="control-label">الكاميرا</span>
+          <button class="icon-btn" id="zoomOut" type="button" aria-label="تصغير المشهد" title="تصغير">−</button>
+          <output id="zoomValue" class="zoom-value" aria-live="polite">100%</output>
+          <button class="icon-btn" id="zoomIn" type="button" aria-label="تكبير المشهد" title="تكبير">+</button>
+          <button class="btn btn-secondary btn-reset" id="resetView" type="button">إعادة ضبط</button>
+        </div>
+      </div>
+      <div class="control-foot">
+        <span class="status"><span class="live-dot" id="statusDot"></span><span id="statusText" aria-live="polite">المونوريل يتحرك</span></span>
+        <span class="direction-status" id="directionStatus">الاتجاه: إلى اليمين</span>
+        <span class="interaction-hint">كبّر المشهد ثم اسحبه بالماوس أو بإصبعك لتحريك زاوية الكاميرا.</span>
+      </div>
+    </section>
+  </section>
+
+
+  <section class="section route-section" id="route-map" aria-labelledby="routeTitle">
+    <div class="section-heading">
+      <div class="eyebrow detailable" data-detail-id="routeTag">دليل المحطات · 22 محطة</div>
+      <h2 id="routeTitle" class="detailable" data-detail-id="routeTitleDetail">خريطة مسار مونوريل شرق النيل</h2>
+      <p class="detailable" data-detail-id="routeIntro">يبدأ الخط من استاد القاهرة بمدينة نصر، ويمر بالقاهرة الجديدة، وينتهي في مدينة العدالة بالعاصمة الإدارية الجديدة.</p>
+    </div>
+    <div class="route-summary" aria-label="ملخص مسار مونوريل شرق النيل">
+      <div class="route-stat"><strong>56.5 كم</strong><span>الطول التقريبي للخط</span></div>
+      <div class="route-stat"><strong>22 محطة</strong><span>من استاد القاهرة إلى مدينة العدالة</span></div>
+      <div class="route-stat"><strong>80 كم/س</strong><span>السرعة التشغيلية المنشورة</span></div>
+    </div>
+    <div class="route-map-card">
+      <div class="route-map-titlebar">
+        <div><h3>مسار المحطات بالترتيب</h3><p>خريطة المسار التفاعلية الموجودة بالموقع</p></div>
+        <span class="route-live-chip"><span></span> شرق النيل</span>
+      </div>
+      <div class="route-groups">
+        <section class="route-region" aria-label="مدينة نصر وشرق القاهرة">
+          <header class="route-region-header"><span class="route-region-icon">١</span><div><h3 class="detailable" data-detail-id="regionNasrTitle">مدينة نصر وشرق القاهرة</h3><p class="detailable" data-detail-id="regionNasrBody">من استاد القاهرة حتى جيهان السادات</p></div></header>
+          <div class="station-list">
+            <button type="button" class="station-stop" data-station-id="1" aria-label="عرض تفاصيل محطة استاد القاهرة">
+              <span class="station-number">01</span><span class="station-name-wrap"><strong>استاد القاهرة</strong><small>Cairo Stadium</small></span><span class="station-end">البداية</span>
+            </button>
+            <button type="button" class="station-stop" data-station-id="2" aria-label="عرض تفاصيل محطة هشام بركات">
+              <span class="station-number">02</span><span class="station-name-wrap"><strong>هشام بركات</strong><small>Hisham Barakat</small></span>
+            </button>
+            <button type="button" class="station-stop" data-station-id="3" aria-label="عرض تفاصيل محطة جامعة الأزهر">
+              <span class="station-number">03</span><span class="station-name-wrap"><strong>جامعة الأزهر</strong><small>Al-Azhar University</small></span>
+            </button>
+            <button type="button" class="station-stop" data-station-id="4" aria-label="عرض تفاصيل محطة الحي السابع">
+              <span class="station-number">04</span><span class="station-name-wrap"><strong>الحي السابع</strong><small>7th District</small></span>
+            </button>
+            <button type="button" class="station-stop" data-station-id="5" aria-label="عرض تفاصيل محطة المشير أحمد إسماعيل">
+              <span class="station-number">05</span><span class="station-name-wrap"><strong>المشير أحمد إسماعيل</strong><small>Marshal Ahmed Ismail</small></span>
+            </button>
+            <button type="button" class="station-stop" data-station-id="6" aria-label="عرض تفاصيل محطة جيهان السادات">
+              <span class="station-number">06</span><span class="station-name-wrap"><strong>جيهان السادات</strong><small>Jehan Sadat</small></span>
+            </button>
+          </div>
+        </section>
+        <section class="route-region" aria-label="القاهرة الجديدة">
+          <header class="route-region-header"><span class="route-region-icon">٢</span><div><h3 class="detailable" data-detail-id="regionNewCairoTitle">القاهرة الجديدة</h3><p class="detailable" data-detail-id="regionNewCairoBody">من المشير طنطاوي حتى بيت الوطن</p></div></header>
+          <div class="station-list">
+            <button type="button" class="station-stop" data-station-id="7" aria-label="عرض تفاصيل محطة المشير طنطاوي">
+              <span class="station-number">07</span><span class="station-name-wrap"><strong>المشير طنطاوي</strong><small>Marshal Tantawy</small></span>
+            </button>
+            <button type="button" class="station-stop" data-station-id="8" aria-label="عرض تفاصيل محطة وان ناينتي">
+              <span class="station-number">08</span><span class="station-name-wrap"><strong>وان ناينتي</strong><small>One Ninety</small></span>
+            </button>
+            <button type="button" class="station-stop" data-station-id="9" aria-label="عرض تفاصيل محطة المستشفى الجوي">
+              <span class="station-number">09</span><span class="station-name-wrap"><strong>المستشفى الجوي</strong><small>Air Force Hospital</small></span>
+            </button>
+            <button type="button" class="station-stop" data-station-id="10" aria-label="عرض تفاصيل محطة النرجس">
+              <span class="station-number">10</span><span class="station-name-wrap"><strong>النرجس</strong><small>El Narges</small></span>
+            </button>
+            <button type="button" class="station-stop" data-station-id="11" aria-label="عرض تفاصيل محطة المستثمرين">
+              <span class="station-number">11</span><span class="station-name-wrap"><strong>المستثمرين</strong><small>Investors</small></span>
+            </button>
+            <button type="button" class="station-stop" data-station-id="12" aria-label="عرض تفاصيل محطة اللوتس">
+              <span class="station-number">12</span><span class="station-name-wrap"><strong>اللوتس</strong><small>Al Lotus</small></span>
+            </button>
+            <button type="button" class="station-stop" data-station-id="13" aria-label="عرض تفاصيل محطة جولدن سكوير">
+              <span class="station-number">13</span><span class="station-name-wrap"><strong>جولدن سكوير</strong><small>Golden Square</small></span>
+            </button>
+            <button type="button" class="station-stop" data-station-id="14" aria-label="عرض تفاصيل محطة بيت الوطن">
+              <span class="station-number">14</span><span class="station-name-wrap"><strong>بيت الوطن</strong><small>Beit Al-Watan</small></span>
+            </button>
+          </div>
+        </section>
+        <section class="route-region" aria-label="العاصمة الإدارية الجديدة">
+          <header class="route-region-header"><span class="route-region-icon">٣</span><div><h3 class="detailable" data-detail-id="regionCapitalTitle">العاصمة الإدارية الجديدة</h3><p class="detailable" data-detail-id="regionCapitalBody">من مسجد الفتاح العليم حتى مدينة العدالة</p></div></header>
+          <div class="station-list">
+            <button type="button" class="station-stop" data-station-id="15" aria-label="عرض تفاصيل محطة مسجد الفتاح العليم">
+              <span class="station-number">15</span><span class="station-name-wrap"><strong>مسجد الفتاح العليم</strong><small>Al-Fattah Al-Aleem Mosque</small></span>
+            </button>
+            <button type="button" class="station-stop" data-station-id="16" aria-label="عرض تفاصيل محطة الحي R1">
+              <span class="station-number">16</span><span class="station-name-wrap"><strong>الحي R1</strong><small>R1 Residential District</small></span>
+            </button>
+            <button type="button" class="station-stop" data-station-id="17" aria-label="عرض تفاصيل محطة الحي R2">
+              <span class="station-number">17</span><span class="station-name-wrap"><strong>الحي R2</strong><small>R2 Residential District</small></span>
+            </button>
+            <button type="button" class="station-stop" data-station-id="18" aria-label="عرض تفاصيل محطة حي المال والأعمال">
+              <span class="station-number">18</span><span class="station-name-wrap"><strong>حي المال والأعمال</strong><small>Central Business District</small></span>
+            </button>
+            <button type="button" class="station-stop" data-station-id="19" aria-label="عرض تفاصيل محطة مدينة الفنون والثقافة">
+              <span class="station-number">19</span><span class="station-name-wrap"><strong>مدينة الفنون والثقافة</strong><small>Arts & Culture City</small></span>
+            </button>
+            <button type="button" class="station-stop" data-station-id="20" aria-label="عرض تفاصيل محطة الحي الحكومي">
+              <span class="station-number">20</span><span class="station-name-wrap"><strong>الحي الحكومي</strong><small>Government District</small></span>
+            </button>
+            <button type="button" class="station-stop" data-station-id="21" aria-label="عرض تفاصيل محطة مسجد مصر">
+              <span class="station-number">21</span><span class="station-name-wrap"><strong>مسجد مصر</strong><small>Misr Mosque</small></span>
+            </button>
+            <button type="button" class="station-stop" data-station-id="22" aria-label="عرض تفاصيل محطة مدينة العدالة">
+              <span class="station-number">22</span><span class="station-name-wrap"><strong>مدينة العدالة</strong><small>Justice City</small></span><span class="station-end">النهاية</span>
+            </button>
+          </div>
+        </section>
+      </div>
+      <div class="station-detail-box" id="stationDetailBox" aria-live="polite">
+        <div class="station-detail-icon">ⓘ</div><div class="station-detail-copy"><strong id="stationDetailTitle">اختر محطة من الخريطة</strong><p id="stationDetailText">اضغط على أي محطة لتحديث معلوماتها هنا وفتح موقعها في خرائط Google</p><a id="stationMapLink" href="https://thingsincairo.com/cairo-transport/line/monorail-east/" target="_blank" rel="noopener noreferrer">فتح دليل المسار الكامل ↗</a></div>
+      </div>
+    </div>
+    <div class="route-source-row"><span>مصادر المسار:</span><a href="https://thingsincairo.com/cairo-transport/line/monorail-east/" target="_blank" rel="noopener noreferrer">فتح الخريطة الجغرافية على Things in Cairo ↗</a><a href="https://www.nat.gov.eg/LocationActivity.aspx?id=2163" target="_blank" rel="noopener noreferrer">الهيئة القومية للأنفاق</a><a href="https://thingsincairo.com/cairo-transport/line/monorail-east/" target="_blank" rel="noopener noreferrer">دليلك في القاهرة — مونوريل شرق النيل</a><a href="https://sis.gov.eg/ar/" target="_blank" rel="noopener noreferrer">الهيئة العامة للاستعلامات</a></div>
+    <p class="route-caveat">تنبيه: الترتيب مبني على المعلومات المنشورة حتى أكتوبر 2026. هذا الرسم يوضح تسلسل المحطات ومجموعات المناطق ولا يمثل المسار الجغرافي الدقيق أو بيانات تشغيل لحظية. استخدم الروابط المرفقة للتحقق من الموقع الفعلي والمستجدات.</p>
+  </section>
+
+  <section class="section photo-section" id="photos" aria-labelledby="photosTitle">
+    <div class="section-heading">
+      <div class="eyebrow detailable" data-detail-id="photosTag">صور فوتوغرافية · مونوريل شرق النيل</div>
+      <h2 id="photosTitle" class="detailable" data-detail-id="photosTitle">صور حقيقية للقطار والمحطات</h2>
+      <!-- <p class="detailable" data-detail-id="photosIntro">هذه صور فوتوغرافية من مصادر منشورة، منفصلة عن مشهد SVG التوضيحي المتحرك في أعلى الصفحة. اضغط على الصورة لفتح المصدر أو اضغط على عنوانها لقراءة التفاصيل وطرح سؤال عنها.</p> -->
+    </div>
+    <div class="photo-grid">
+      <article class="photo-card">
+        <a class="photo-image-link" href="https://commons.wikimedia.org/wiki/File:Administrative_Capital_Monorail_Experiences.jpg" target="_blank" rel="noopener noreferrer" aria-label="فتح مصدر صورة تجارب المونوريل"><img class="photo-image" src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Administrative_Capital_Monorail_Experiences.jpg" alt="قطار مونوريل شرق النيل على المسار المرتفع بجوار مبنى محطة بالعاصمة الإدارية خلال التجارب" loading="lazy" referrerpolicy="no-referrer"><span class="photo-fallback" hidden>تعذّر تحميل الصورة من المصدر الخارجي. افتح رابط المصدر للاطلاع عليها.</span></a>
+        <div class="photo-copy"><span class="photo-kicker">العاصمة الإدارية الجديدة</span><h3 class="detailable" data-detail-id="photoTrialTitle">تجارب المونوريل على المسار المرتفع</h3><p class="detailable" data-detail-id="photoTrialBody">لقطة حقيقية لأعمال تجارب مونوريل شرق النيل قرب محطة بالعاصمة الإدارية، منشورة بتاريخ 10 يوليو 2025.</p><a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Administrative_Capital_Monorail_Experiences.jpg" target="_blank" rel="noopener noreferrer">الصورة: Walid777999 · رخصة CC BY-SA 4.0</a></div>
+      </article>
+      <article class="photo-card">
+        <a class="photo-image-link" href="https://static.srpcdigital.com/styles/1037xauto/public/2026-06/1625804.jpeg.webp" target="_blank" rel="noopener noreferrer" aria-label="فتح صورة القطار داخل المحطة"><img class="photo-image" src="https://static.srpcdigital.com/styles/1037xauto/public/2026-06/1625804.jpeg.webp" alt="قطار مونوريل أبيض خلف الأبواب الزجاجية على رصيف محطة حديثة" loading="lazy" referrerpolicy="no-referrer"><span class="photo-fallback" hidden>تعذّر تحميل الصورة من المصدر الخارجي. افتح رابط الصورة للاطلاع عليها.</span></a>
+        <div class="photo-copy"><span class="photo-kicker">رصيف محطة</span><h3 class="detailable" data-detail-id="photoPlatformTitle">القطار خلف أبواب الرصيف</h3><p class="detailable" data-detail-id="photoPlatformBody">صورة منشورة لقطار المونوريل داخل محطة حديثة؛ تُظهر الحواجز الزجاجية وأرضية الرصيف قبل صعود الركاب.</p><a class="photo-credit" href="https://aawsat.com/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/%D8%B4%D9%85%D8%A7%D9%84-%D8%A7%D9%81%D8%B1%D9%8A%D9%82%D9%8A%D8%A7/5288939-%D9%85%D8%B5%D8%B1-%D8%AA%D8%B4%D8%BA%D9%84-%D9%85%D8%B1%D8%AD%D9%84%D8%A9-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D9%85%D9%86-%D8%A7%D9%84%D9%85%D9%88%D9%86%D9%88%D8%B1%D9%8A%D9%84-%D9%84%D8%AA%D8%B9%D8%B2%D9%8A%D8%B2-%D8%A7%D9%84%D8%B1%D8%A8%D8%B7-%D9%85%D8%B9-%D8%A7%D9%84%D8%B9%D8%A7%D8%B5%D9%85%D8%A9" target="_blank" rel="noopener noreferrer">المصدر المصوّر: الشرق الأوسط</a></div>
+      </article>
+      <article class="photo-card">
+        <a class="photo-image-link" href="https://img.youm7.com/ArticleImgs/2026/6/28/216806-%D9%85%D9%88%D9%86%D9%88%D8%B1%D9%8A%D9%84-%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D9%86%D9%8A%D9%84-%284%29.jpg" target="_blank" rel="noopener noreferrer" aria-label="فتح صورة ممر محطة المونوريل"><img class="photo-image" src="https://img.youm7.com/ArticleImgs/2026/6/28/216806-%D9%85%D9%88%D9%86%D9%88%D8%B1%D9%8A%D9%84-%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D9%86%D9%8A%D9%84-%284%29.jpg" alt="ممر داخلي بمحطة مونوريل شرق النيل مع لافتة الخروج والركاب" loading="lazy" referrerpolicy="no-referrer"><span class="photo-fallback" hidden>تعذّر تحميل الصورة من المصدر الخارجي. افتح رابط الصورة للاطلاع عليها.</span></a>
+        <div class="photo-copy"><span class="photo-kicker">محطة الاستاد</span><h3 class="detailable" data-detail-id="photoStationTitle">الممرات الداخلية بالمحطة</h3><p class="detailable" data-detail-id="photoStationBody">صورة من محطة مونوريل شرق النيل أثناء التشغيل في يونيو 2026، وتُظهر جزءًا من منطقة حركة الركاب والإرشادات داخل المحطة.</p><a class="photo-credit" href="https://www.youm7.com/story/2026/6/28/%D8%A5%D9%82%D8%A8%D8%A7%D9%84-%D9%83%D8%AB%D9%8A%D9%81-%D8%A8%D9%85%D8%AD%D8%B7%D8%A9-%C2%AB%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%A7%D8%AF%C2%BB-%D9%81%D9%89-%D8%AB%D8%A7%D9%86%D9%89-%D8%A3%D9%8A%D8%A7%D9%85-%D8%A7%D9%84%D8%AA%D8%B4%D8%BA%D9%8A%D9%84-%D8%A7%D9%84%D9%83%D8%A7%D9%85%D9%84-%D9%84%D9%85%D9%88%D9%86%D9%88%D8%B1%D9%8A%D9%84/7463779" target="_blank" rel="noopener noreferrer">المصدر: اليوم السابع · 28 يونيو 2026</a></div>
+      </article>
+      <article class="photo-card">
+        <a class="photo-image-link" href="https://www.youm7.com/story/2025/6/19/%D8%B4%D8%A7%D9%87%D8%AF-%D9%85%D8%AD%D8%B7%D8%A9-%D9%85%D9%88%D9%86%D9%88%D8%B1%D9%8A%D9%84-%D8%A7%D9%84%D8%B9%D8%AF%D8%A7%D9%84%D8%A9-%D9%88%D8%B7%D8%B1%D9%82-%D8%A7%D9%84%D9%88%D8%B5%D9%88%D9%84-%D9%84%D9%84%D9%82%D8%B7%D8%A7%D8%B1-%D8%B5%D9%88%D8%B1/7027142" target="_blank" rel="noopener noreferrer" aria-label="فتح مصدر صورة رصيف محطة العدالة"><img class="photo-image" src="https://img.youm7.com/ArticleImgs/2025/6/19/123103-%D8%B1%D8%B5%D9%8A%D9%81-%D8%A7%D9%84%D9%85%D8%AD%D8%B7%D8%A9.jpg" alt="رصيف محطة مونوريل العدالة مع الأبواب الزجاجية ولافتة الخروج" loading="lazy" referrerpolicy="no-referrer"><span class="photo-fallback" hidden>تعذّر تحميل الصورة من المصدر الخارجي. افتح رابط المصدر للاطلاع عليها.</span></a>
+        <div class="photo-copy"><span class="photo-kicker">محطة مدينة العدالة</span><h3 class="detailable" data-detail-id="photoJusticeTitle">رصيف محطة العدالة</h3><p class="detailable" data-detail-id="photoJusticeBody">صورة منشورة في يونيو 2025 تُظهر رصيف محطة مونوريل العدالة والأبواب الزجاجية وإرشادات الخروج.</p><a class="photo-credit" href="https://www.youm7.com/story/2025/6/19/%D8%B4%D8%A7%D9%87%D8%AF-%D9%85%D8%AD%D8%B7%D8%A9-%D9%85%D9%88%D9%86%D9%88%D8%B1%D9%8A%D9%84-%D8%A7%D9%84%D8%B9%D8%AF%D8%A7%D9%84%D8%A9-%D9%88%D8%B7%D8%B1%D9%82-%D8%A7%D9%84%D9%88%D8%B5%D9%88%D9%84-%D9%84%D9%84%D9%82%D8%B7%D8%A7%D8%B1-%D8%B5%D9%88%D8%B1/7027142" target="_blank" rel="noopener noreferrer">المصدر: اليوم السابع · 19 يونيو 2025</a></div>
+      </article>
+    </div>
+    <p class="photo-footnote">تحتاج الصور إلى اتصال بالإنترنت لأنها تُحمّل من مواقع مصادرها الأصلية. قد تتغير روابط الصور أو سياسات عرضها لدى الناشرين.</p>
+  </section>
+
+  <section class="section tickets-section" id="tickets" aria-labelledby="ticketsTitle">
+    <div class="section-heading">
+      <div class="eyebrow detailable" data-detail-id="ticketsTag">معلومات الركاب · تحديث منشور 2026</div>
+      <h2 id="ticketsTitle" class="detailable" data-detail-id="ticketsTitle">أسعار التذاكر وطرق الدفع</h2>
+      <p class="detailable" data-detail-id="ticketsIntro">تعتمد تذكرة مونوريل شرق النيل على عدد المحطات/المناطق التي تقطعها. الأسعار التالية للتذكرة الكاملة للرحلة الواحدة، وفق إعلان وزارة النقل المنشور في مايو 2026.</p>
+    </div>
+    <div class="fare-grid">
+      <article class="fare-card"><span class="fare-number">01</span><h3 class="detailable" data-detail-id="fareOneTitle">منطقة واحدة</h3><p class="detailable" data-detail-id="fareOneBody">حتى 5 محطات</p><strong class="detailable fare-price" data-detail-id="fareOnePrice">20 جنيهًا</strong></article>
+      <article class="fare-card"><span class="fare-number">02</span><h3 class="detailable" data-detail-id="fareTwoTitle">منطقتان</h3><p class="detailable" data-detail-id="fareTwoBody">حتى 10 محطات</p><strong class="detailable fare-price" data-detail-id="fareTwoPrice">40 جنيهًا</strong></article>
+      <article class="fare-card"><span class="fare-number">03</span><h3 class="detailable" data-detail-id="fareThreeTitle">ثلاث مناطق</h3><p class="detailable" data-detail-id="fareThreeBody">حتى 15 محطة</p><strong class="detailable fare-price" data-detail-id="fareThreePrice">55 جنيهًا</strong></article>
+      <article class="fare-card fare-card-highlight"><span class="fare-number">04</span><h3 class="detailable" data-detail-id="fareFourTitle">الخط كاملًا</h3><p class="detailable" data-detail-id="fareFourBody">حتى 22 محطة</p><strong class="detailable fare-price" data-detail-id="fareFourPrice">80 جنيهًا</strong></article>
+    </div>
+    <p class="fare-discount-note detailable" data-detail-id="fareDiscountNote">نصف التذكرة للفئات المستحقة (كبار السن فوق 60 عامًا وذوو الإعاقة): 10 جنيهات لمنطقة واحدة، و20 جنيهًا لمنطقتين، و30 جنيهًا لثلاث مناطق، و40 جنيهًا للخط كاملًا.</p>
+    <p class="subscription-note detailable" data-detail-id="subscriptionNote">تتوفر أيضًا اشتراكات أسبوعية وشهرية وربع سنوية بحسب نطاق الرحلة وعدد الرحلات، مع خصومات معلنة. راجع شباك الاشتراكات بالمحطة للتأكد من الأسعار والشروط السارية.</p>
+    <div class="ticket-lower-grid">
+      <div class="payment-panel">
+        <h3 class="detailable" data-detail-id="paymentTitle">طرق الدفع المتاحة</h3>
+        <p class="detailable" data-detail-id="paymentIntro">بحسب بيان وزارة النقل، يمكن دفع قيمة التذكرة من خلال شبابيك التذاكر وماكينات بيع التذاكر TVM بالطرق التالية:</p>
+        <div class="payment-methods">
+          <div class="payment-method"><span class="payment-icon" aria-hidden="true">ج</span><span><b class="detailable" data-detail-id="paymentCashTitle">نقدًا</b><small class="detailable" data-detail-id="paymentCashBody">الدفع نقدًا عند شباك التذاكر أو ماكينة البيع.</small></span></div>
+          <div class="payment-method"><span class="payment-icon" aria-hidden="true">▰</span><span><b class="detailable" data-detail-id="paymentVisaTitle">بطاقة بنكية (Visa)</b><small class="detailable" data-detail-id="paymentVisaBody">استخدم البطاقة عبر وسيلة الدفع المتاحة في الشباك أو ماكينة TVM.</small></span></div>
+          <div class="payment-method"><span class="payment-icon" aria-hidden="true">▦</span><span><b class="detailable" data-detail-id="paymentWalletTitle">محفظة إلكترونية</b><small class="detailable" data-detail-id="paymentWalletBody">يمكن الدفع بمحفظة إلكترونية وفق الوسائل المعلنة رسميًا.</small></span></div>
+        </div>
+        <p class="payment-note">للتأكيد على الخيارات المتاحة عند الشراء، راجع تعليمات الشباك أو ماكينة TVM في المحطة.</p>
+      </div>
+      <div class="fare-calculator">
+        <h3 class="detailable" data-detail-id="calculatorTitle">احسب سعر تذكرتك</h3>
+        <p class="detailable" data-detail-id="calculatorIntro">اختر نطاق الرحلة وفئة التذكرة لعرض السعر المعلن.</p>
+        <label for="fareZoneSelect">نطاق الرحلة</label>
+        <select id="fareZoneSelect">
+          <option value="one">منطقة واحدة — حتى 5 محطات</option>
+          <option value="two">منطقتان — حتى 10 محطات</option>
+          <option value="three">ثلاث مناطق — حتى 15 محطة</option>
+          <option value="four">الخط كاملًا — حتى 22 محطة</option>
+        </select>
+        <label for="fareTypeSelect">فئة التذكرة</label>
+        <select id="fareTypeSelect">
+          <option value="full">تذكرة كاملة</option>
+          <option value="half">نصف تذكرة (كبار السن فوق 60 عامًا وذوو الإعاقة)</option>
+        </select>
+        <button class="btn btn-primary fare-calc-button" id="calculateFare" type="button">احسب السعر</button>
+        <div class="fare-result" id="fareResult" role="status" aria-live="polite">اختر بيانات الرحلة ثم اضغط «احسب السعر».</div>
+      </div>
+    </div>
+    <p class="official-source"><span>المصدر الرسمي:</span> <a href="https://sis.gov.eg/ar/%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%B2-%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%85%D9%8A/%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1/%D8%A7%D9%84%D9%86%D9%82%D9%84-%D8%AA%D8%B9%D9%84%D9%86-%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1-%D8%AA%D8%B0%D8%A7%D9%83%D8%B1-%D9%88%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%D8%A7%D8%AA-%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-%D9%85%D9%88%D9%86%D9%88%D8%B1%D9%8A%D9%84-%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D9%86%D9%8A%D9%84/" target="_blank" rel="noopener noreferrer">أسعار تذاكر مونوريل شرق النيل — وزارة النقل (8 مايو 2026)</a> · <a href="https://sis.gov.eg/ar/%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%B2-%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%85%D9%8A/%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1/%D9%88%D8%B2%D9%8A%D8%B1-%D8%A7%D9%84%D9%86%D9%82%D9%84-%D9%8A%D8%B3%D8%AA%D9%82%D9%84-%D9%82%D8%B7%D8%A7%D8%B1-%D8%A7%D9%84%D9%85%D9%88%D9%86%D9%88%D8%B1%D9%8A%D9%84-%D9%85%D9%86-%D9%85%D8%AD%D8%B7%D8%A9-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%AB%D9%85%D8%B1%D9%8A%D9%86-%D8%A8%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D8%AD%D8%AA%D9%89-%D9%85%D8%AD%D8%B7%D8%A9-%D8%A7%D9%84%D9%8A-%D8%A7%D9%84%D8%AD%D9%8A-%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D9%8A-%D8%A8%D8%A7%D9%84%D8%B9%D8%A7%D8%B5%D9%85%D8%A9-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9/" target="_blank" rel="noopener noreferrer">طرق الدفع المذكورة من وزارة النقل</a> · <a href="https://www.cairo.gov.eg/en/news/2026/june/16/87ea4f13fca84d17953f559a6e7ee465" target="_blank" rel="noopener noreferrer">تفاصيل الاشتراكات من بوابة القاهرة</a></p>
+  </section>
+
+
+  <section class="section faq-section" id="faqs" aria-labelledby="faqTitle">
+    <div class="section-heading">
+      <div class="eyebrow detailable" data-detail-id="faqTag"> اعرف أكتر · </div>
+      <h2 id="faqTitle" class="detailable" data-detail-id="faqTitleDetail">الأسئلة الشائعة عن المونوريل</h2>
+      <p class="detailable" data-detail-id="faqIntroDetail">اضغط على أي سؤال لعرض الإجابة فوراً.</p>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary><span class="faq-number">01</span><span>ما هو مونوريل شرق النيل؟</span><span class="faq-chevron" aria-hidden="true">＋</span></summary>
+        <div class="faq-answer"><p>قطار كهربائي يسير على مسار مرتفع، ويربط مدينة نصر بالقاهرة الجديدة والعاصمة الإدارية الجديدة. لا يحتاج إلى عبور التقاطعات المرورية على مستوى الشارع.</p></div>
+      </details>
+      <details class="faq-item" >
+        <summary><span class="faq-number">02</span><span>من أين يبدأ الخط وأين ينتهي؟</span><span class="faq-chevron" aria-hidden="true">＋</span></summary>
+        <div class="faq-answer"><p>يبدأ من محطة استاد القاهرة بمدينة نصر وينتهي في محطة مدينة العدالة بالعاصمة الإدارية الجديدة.</p></div>
+      </details>
+      <details class="faq-item" >
+        <summary><span class="faq-number">03</span><span>كم عدد المحطات وطول الخط؟</span><span class="faq-chevron" aria-hidden="true">＋</span></summary>
+        <div class="faq-answer"><p>يضم المسار الكامل 22 محطة ويمتد لنحو 56.5 كيلومترًا، وفق بيانات الهيئة القومية للأنفاق وبيان تشغيل المرحلة الكاملة في يونيو 2026.</p></div>
+      </details>
+      <details class="faq-item" >
+        <summary><span class="faq-number">04</span><span>ما ترتيب المحطات؟</span><span class="faq-chevron" aria-hidden="true">＋</span></summary>
+        <div class="faq-answer"><p>الاستاد، هشام بركات، جامعة الأزهر، الحي السابع، المشير أحمد إسماعيل، جيهان السادات، المشير طنطاوي، وان ناينتي، المستشفى الجوي، النرجس، المستثمرين، اللوتس، جولدن سكوير، بيت الوطن، مسجد الفتاح العليم، الحي R1، الحي R2، المال والأعمال، مدينة الفنون والثقافة، الحي الحكومي، مسجد مصر، مدينة العدالة.</p></div>
+      </details>
+      <details class="faq-item" >
+        <summary><span class="faq-number">05</span><span>أين يمكن التبديل إلى المترو أو القطار الكهربائي الخفيف؟</span><span class="faq-chevron" aria-hidden="true">＋</span></summary>
+        <div class="faq-answer"><p>تذكر المصادر الحديثة نقطة تبادل عند محطة استاد القاهرة مع الخط الثالث لمترو القاهرة، وعند محطة مدينة الفنون والثقافة مع القطار الكهربائي الخفيف LRT. خططا التبادل المستقبلية الأخرى قد تتغير؛ تحقق من الإعلان الرسمي قبل بناء رحلة عليها.</p></div>
+      </details>
+      <details class="faq-item" >
+        <summary><span class="faq-number">06</span><span>ما مواعيد التشغيل؟</span><span class="faq-chevron" aria-hidden="true">＋</span></summary>
+        <div class="faq-answer"><p>أعلن بيان بدء تشغيل المسار الكامل في 27 يونيو 2026 التشغيل يوميًا من الساعة السادسة صباحًا حتى التاسعة مساءً. قد تتغير المواعيد أو تُعدل في المناسبات؛ تحقق من الإعلانات الرسمية قبل السفر.</p></div>
+      </details>
+      <details class="faq-item" >
+        <summary><span class="faq-number">07</span><span>كم سعر التذكرة؟</span><span class="faq-chevron" aria-hidden="true">＋</span></summary>
+        <div class="faq-answer"><p>وفق إعلان وزارة النقل المنشور في 8 مايو 2026: 20 جنيهًا حتى 5 محطات، و40 جنيهًا حتى 10 محطات، و55 جنيهًا حتى 15 محطة، و80 جنيهًا للخط كاملًا. قد تتغير التعريفة؛ راجع شباك التذاكر قبل الرحلة.</p></div>
+      </details>
+      <details class="faq-item" >
+        <summary><span class="faq-number">08</span><span>كيف أدفع ثمن التذكرة؟</span><span class="faq-chevron" aria-hidden="true">＋</span></summary>
+        <div class="faq-answer"><p>ذكرت الإعلانات المنشورة الدفع نقدًا أو ببطاقة بنكية أو بمحفظة إلكترونية من خلال شباك التذاكر أو ماكينة بيع التذاكر TVM، مع ضرورة التأكد من الوسائل المتاحة عند نقطة البيع وقت الشراء.</p></div>
+      </details>
+      <details class="faq-item" >
+        <summary><span class="faq-number">09</span><span>هل توجد خصومات أو اشتراكات؟</span><span class="faq-chevron" aria-hidden="true">＋</span></summary>
+        <div class="faq-answer"><p>توجد أسعار مخفضة لفئات مستحقة واشتراكات بفترات مختلفة بحسب الإعلانات المنشورة. تختلف الشروط والمستندات والأسعار حسب الفئة ونطاق الرحلة؛ راجع شباك الاشتراكات للحصول على التفاصيل السارية.</p></div>
+      </details>
+      <details class="faq-item" >
+        <summary><span class="faq-number">10</span><span>هل الخط مهيأ لذوي الإعاقة؟</span><span class="faq-chevron" aria-hidden="true">＋</span></summary>
+        <div class="faq-answer"><p>أعلنت وزارة النقل تجهيزات تسهيل الوصول تشمل مصاعد وبلاطات إرشادية ومساحات مخصصة للكراسي المتحركة. تحقق من تجهيزات ومداخل المحطة المقصودة إذا كنت تحتاج إلى مساعدة محددة.</p></div>
+      </details>
+      <!-- <details class="faq-item" >
+        <summary><span class="faq-number">11</span><span>هل هذه الخريطة جغرافية دقيقة؟</span><span class="faq-chevron" aria-hidden="true">＋</span></summary>
+        <div class="faq-answer"><p>لا. هذه خريطة تخطيطية توضح ترتيب المحطات ومجموعات المناطق فقط. افتح رابط خرائط Google من تفاصيل كل محطة أو استخدم دليل المحطات المرتبط للتحقق من الموقع الجغرافي.</p></div>
+      </details> -->
+    </div>
+  </section>
+</main>
+<footer>
+  <span>مونوريل مصر</span>
+  <span>HTML · CSS · SVG · JavaScript</span>
+  <span>انجازات مصر</span>
+</footer>
+
+<div class="detail-backdrop" id="detailBackdrop" hidden>
+  <section class="detail-dialog" role="dialog" aria-modal="true" aria-labelledby="detailTitle" aria-describedby="detailBody" tabindex="-1">
+    <button class="dialog-close" id="closeDetails" type="button" aria-label="إغلاق نافذة التفاصيل">×</button>
+    <div class="dialog-eyebrow">شرح تفصيلي من دليل الموقع</div>
+    <h2 id="detailTitle">العنوان</h2>
+    <p id="detailBody">التفاصيل الأساسية عن المعلومة.</p>
+    <div class="dialog-actions">
+      <a class="btn btn-primary" id="detailMapLink" href="https://thingsincairo.com/cairo-transport/line/monorail-east/" target="_blank" rel="noopener noreferrer">فتح المصدر أو موقع المحطة ↗</a>
+      <button class="btn btn-secondary" id="copyDetails" type="button">نسخ التفاصيل</button>
+    </div>
+    <p class="dialog-note">تعرض هذه النافذة معلومات محفوظة محليًا داخل ملفات الموقع؛ لا تستخدم ذكاءً اصطناعيًا. راجع المصادر الرسمية للتحقق من أي تغيير في التشغيل أو الأسعار.</p>
+  </section>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
